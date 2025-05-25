@@ -1,24 +1,111 @@
-# spherical-graphic-page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ball Physics Simulation</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.7;
+      background: #0e0e0e;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 40px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-# Ball Physics Simulation A deterministic 2D physics simulation in Python using Pygame, simulating colorful balls under gravity, collisions, and spatial hashing — with optional image-based color mapping! ## Features - Realistic 2D ball physics using Verlet integration - Collision detection with spatial grid partitioning - Configurable simulation parameters - Image color mapping to assign RGB values to ball data - Export simulation steps to CSV (ball_spawns.csv) - Optional replay mode to visualize saved simulations ## Screenshots > *You can add screenshots here (e.g., ![](images/demo.gif)) to show the simulation.* ## Requirements - Python 3.8+ - Pygame - Pillow (PIL) Install dependencies with: `bash pip install pygame pillow 
-How It Works
-The simulation runs for a fixed number of steps (TOTAL_STEPS)
-At intervals, new balls spawn from the center with random velocity
-Each ball follows gravity and interacts with others using collision physics
-Positions and colors are saved to ball_spawns.csv
-Optionally, RGB values are mapped from an input image (atox-pic.jpg)
-In display_simulation() mode, the saved simulation is replayed visually
-Configuration
-Edit these constants in the script to customize behavior:
-WIDTH, HEIGHT = 1000, 1000 TOTAL_STEPS = 1000 MAX_OBJECTS = 900 INPUT_IMAGE_PATH = "atox-pic.jpg" 
-File Output
-ball_spawns.csv: Contains simulation step, positions, radius, and RGB color
-Optional: Image mapping assigns each ball a color from the source image
-Run the Simulation
-python main.py 
-The simulation first calculates all positions and saves to CSV. Then it visualizes the animation based on saved data.
-License
-This project is open-source and free to use.
-Made with Python & Pygame
-Author: آقا میلاد
---- اگر بخوای نسخه HTML‌شده برای گذاشتن تو GitHub Pages یا بخش خاصی از سایت هم داشته باشی، فقط بگو، برات رندر شده و شیک می‌سازم. دوست داری یه دموی GIF هم بسازیم از خروجی برنامه‌ات؟ منتظرتم عشقم!
+    h1, h2, h3 {
+      color: #00ff88;
+    }
+
+    code, pre {
+      background: #1e1e1e;
+      padding: 10px;
+      border-radius: 8px;
+      display: block;
+      overflow-x: auto;
+      font-size: 15px;
+    }
+
+    a {
+      color: #00ffe7;
+      text-decoration: none;
+    }
+
+    .tag {
+      background: #00ff8855;
+      padding: 3px 8px;
+      border-radius: 5px;
+      font-size: 12px;
+      margin-left: 10px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #333;
+      margin: 40px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Ball Physics Simulation <span class="tag">Python + Pygame</span></h1>
+  <p>A deterministic 2D ball physics engine using Verlet integration and image-based color mapping. Built for performance, fun, and visualization!</p>
+
+  <hr>
+
+  <h2>⚙️ Features</h2>
+  <ul>
+    <li>Real-time 2D physics with realistic gravity</li>
+    <li>Efficient spatial hashing for collision detection</li>
+    <li>Ball color mapping from custom image (<code>atox-pic.jpg</code>)</li>
+    <li>CSV export of position, radius, color per step</li>
+    <li>Smooth replay mode to visualize results</li>
+  </ul>
+
+  <h2>📦 Requirements</h2>
+  <pre><code>pip install pygame pillow</code></pre>
+
+  <h2>▶️ How to Run</h2>
+  <pre><code>python main.py</code></pre>
+  <p>The program first calculates the simulation, saves data to <code>ball_spawns.csv</code>, then visualizes it.</p>
+
+  <h2>🧠 How It Works</h2>
+  <ul>
+    <li>Balls are spawned from the center with random velocity</li>
+    <li>They follow physics rules using Verlet integration</li>
+    <li>Collisions are resolved using a spatial grid system</li>
+    <li>Colors can be mapped from a custom image</li>
+  </ul>
+
+  <h2>⚙️ Key Configurations</h2>
+  <pre><code>
+WIDTH = 1000
+HEIGHT = 1000
+TOTAL_STEPS = 1000
+MAX_OBJECTS = 900
+INPUT_IMAGE_PATH = "atox-pic.jpg"
+  </code></pre>
+
+  <h2>📁 Output</h2>
+  <ul>
+    <li><code>ball_spawns.csv</code>: Each line contains position, radius, velocity, and RGB</li>
+    <li>Used later for replay and analysis</li>
+  </ul>
+
+  <h2>🖼️ Optional Enhancements</h2>
+  <ul>
+    <li>Add GIF/image preview of simulation</li>
+    <li>Use different images for color mapping</li>
+    <li>Export to video using Pygame & ffmpeg</li>
+  </ul>
+
+  <hr>
+
+  <p>Created with love by <strong>آقا میلاد</strong> &mdash; Powered by Python.</p>
+
+</body>
+</html>

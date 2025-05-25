@@ -16,38 +16,6 @@
       margin-left: auto;
       margin-right: auto;
     }
-
-    h1, h2, h3 {
-      color: #00ff88;
-    }
-
-    code, pre {
-      background: #1e1e1e;
-      padding: 10px;
-      border-radius: 8px;
-      display: block;
-      overflow-x: auto;
-      font-size: 15px;
-    }
-
-    a {
-      color: #00ffe7;
-      text-decoration: none;
-    }
-
-    .tag {
-      background: #00ff8855;
-      padding: 3px 8px;
-      border-radius: 5px;
-      font-size: 12px;
-      margin-left: 10px;
-    }
-
-    hr {
-      border: none;
-      border-top: 1px solid #333;
-      margin: 40px 0;
-    }
   </style>
 </head>
 <body>

@@ -3,19 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ball Physics Simulation</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      line-height: 1.7;
-      background: #0e0e0e;
-      color: #f0f0f0;
-      margin: 0;
-      padding: 40px;
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+
   </style>
 </head>
 <body>

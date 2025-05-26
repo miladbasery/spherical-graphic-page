@@ -61,7 +61,7 @@ INPUT_IMAGE_PATH = "atox-pic.jpg"
 
   <hr>
 
-  <p>Created with love by<strong>MIlAD</strong> &mdash; Powered by Python.</p>
+  <p>Created with love by<strong> Milad</strong> &mdash; Powered by Python.</p>
 
 </body>
 </html>
